@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         rvnumber=findViewById(R.id.rvNumber)
         rvnumber.layoutManager=LinearLayoutManager(baseContext)
         var numAdapter=NumberRecyclerViewAdapter(fibonacci(count =100))
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     fun fibonacci(count:Int):List<BigInteger>{
         var begin=BigInteger.ZERO
         var next=BigInteger.ONE
-        var numb= MutableList<BigInteger>(count,{ BigInteger.ZERO})
+        var numb= MutableList<BigInteger>(count,{BigInteger.ZERO})
         numb[0]=begin
         numb[1]=next
         for (i in 1..count){

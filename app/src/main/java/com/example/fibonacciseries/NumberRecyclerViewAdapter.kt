@@ -18,6 +18,6 @@ class NumberRecyclerViewAdapter(var numberList: List<BigInteger>):RecyclerView.A
     override fun getItemCount():Int{
         return numberList.size
     }}
-class NumsViewHolder(val numView:View):RecyclerView.ViewHolder(numView){
-    var tvNumber=itemView.findViewById<TextView>(R.id.tvNumber)
+class NumsViewHolder(numbView:View):RecyclerView.ViewHolder(numbView){
+    var tvNumber = itemView.findViewById<TextView>(R.id.tvNumber)!!
 }
